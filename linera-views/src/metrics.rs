@@ -31,7 +31,7 @@ pub static LOAD_VIEW_LATENCY: LazyLock<prometheus::HistogramVec> = LazyLock::new
 pub static LOAD_VIEW_COUNTER: LazyLock<IntCounterVec> = LazyLock::new(|| {
     prometheus_util::register_int_counter_vec(
         "load_view",
-        "The metric counting how often a view is read from storage",
+        "The metric counting how often a view is read from storage!",
         &["type", "base_key"],
     )
 });
@@ -40,7 +40,7 @@ pub static LOAD_VIEW_COUNTER: LazyLock<IntCounterVec> = LazyLock::new(|| {
 pub static SAVE_VIEW_COUNTER: LazyLock<IntCounterVec> = LazyLock::new(|| {
     prometheus_util::register_int_counter_vec(
         "save_view",
-        "The metric counting how often a view is written from storage",
+        "The metric counting how often a view is written from storage!",
         &["type", "base_key"],
     )
 });
