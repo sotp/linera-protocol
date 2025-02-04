@@ -103,7 +103,7 @@ export default {
           </div>
         </div>
         <div class="card">
-          <div class="card-header">Applications</div>
+          <div class="card-header">Apps</div>
           <div class="card-body">
             <Applications :apps="page.home.apps"/>
           </div>
@@ -145,7 +145,7 @@ export default {
       </div>
 
       <div v-else>
-        Page not found
+        404: Page not found
       </div>
 
     </div>
