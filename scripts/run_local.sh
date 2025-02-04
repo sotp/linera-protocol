@@ -15,7 +15,7 @@ cargo build && cd target/debug
 # cargo build --release && cd target/release
 
 # Clean up data files
-rm -rf *.json *.txt *.db
+rm -rf *.json *.txt *.db *.tmp
 
 # Make sure to clean up child processes on exit.
 trap 'kill $(jobs -p)' EXIT
